@@ -1,14 +1,14 @@
 import express from 'express';
-import path from 'path';
-import { fileURLToPath } from 'url';
+//import path from 'path';
+//import { fileURLToPath } from 'url';
 
 // create new express application
 const app = express();
 
-const __filename = fileURLToPath(import.meta.url);
+//const __filename = fileURLToPath(import.meta.url);
+//const __dirname = path.dirname(__filename);
 
-const __dirname = path.dirname(__filename);
-app.use(express.static(path.join(__dirname, 'views')));
+//app.use(express.static(path.join(__dirname, 'views')));
 
 // create methods that return a response
 const hello = ((req, res) => {
